@@ -20,8 +20,8 @@ const boilingPointC = 100;
 const freezingPointF = celciusToFarenheit(freezingPointC);
 const boilingPointF = celciusToFarenheit(boilingPointC);
 
-console.log(`The freezing point water is ${freezingPointF}`);
-console.log(`The boiling point of water is ${boilingPointF}`);
+console.log(`The freezing point of water in Farenheit is ${freezingPointF}`);
+console.log(`The boiling point of water in Farenheit is ${boilingPointF}`);
 
 
 //new function practice
