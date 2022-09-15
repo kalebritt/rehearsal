@@ -1,3 +1,6 @@
+//require
+const converters = require("./converters");
+
 //for some reason console will log 55
 let total = 0,
   count = 1;
@@ -17,8 +20,8 @@ function celciusToFarenheit(celcius) {
 const freezingPointC = 0;
 const boilingPointC = 100;
 
-const freezingPointF = celciusToFarenheit(freezingPointC);
-const boilingPointF = celciusToFarenheit(boilingPointC);
+const freezingPointF = converters.celciusToFarenheit(freezingPointC);
+const boilingPointF = converters.celciusToFarenheit(boilingPointC);
 
 console.log(`The freezing point of water in Farenheit is ${freezingPointF}`);
 console.log(`The boiling point of water in Farenheit is ${boilingPointF}`);
@@ -34,7 +37,3 @@ const farenheitValue = celciusToFarenheit(celciusInput);
 console.log(
   `${celciusInput} degrees Celcius = ${farenheitValue} degrees Farenheit.`
 );
-
-
-//require 
-const converters = require('./converters')
