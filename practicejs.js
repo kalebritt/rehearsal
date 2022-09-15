@@ -1,3 +1,4 @@
+//for some reason console will log 55
 let total = 0, count = 1;
 while (count <= 10) {
     total += count;
@@ -7,6 +8,8 @@ console.log(total);
 
 // console.log(sum(range(1, 10)));
 
+
+//function practice
 function celciusToFarenheit(celcius) {
     return celcius * (9/5) + 32;
 }
@@ -19,3 +22,14 @@ const boilingPointF = celciusToFarenheit(boilingPointC);
 
 console.log(`The freezing point water is ${freezingPointF}`);
 console.log(`The boiling point of water is ${boilingPointF}`);
+
+
+//new function practice
+function celciusToFarenheit(celcius) {
+    return celcius * (9/5) + 32;
+}
+
+const celciusInput = process.argv[2]
+const farenheitValue = celciusToFarenheit(celciusInput);
+
+console.log(`${celciusInput} degrees Celcius = ${farenheitValue} degrees Farenheit.`);
